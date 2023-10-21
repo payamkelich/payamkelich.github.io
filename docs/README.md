@@ -5,7 +5,7 @@ This repository contains the source code for the personal website of Payam Kelic
 
 
 ## Author
-[Payam Kelich](https://github.com/pkelich)
+[Payam Kelich](https://github.com/payamkelich)
 
 For more information, see [the live project](https://pkelich.github.io).
 
