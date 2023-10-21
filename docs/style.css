@@ -86,3 +86,29 @@ li.bold-name a {
     margin: 0 50px;
     padding: 20px;
 }
+
+.pub {
+    padding: 0 0 0 270px; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+    position: relative;
+}
+
+.pub img {
+    left:10px;
+    top:5px;
+    position: absolute;
+    width: 240px;
+    height: auto;
+    padding: 0 0 0 1px;
+<!-- box-shadow: 0 0 2px rgba(0,0,0,0.4);  -->
+}
+
+
+#publications-wrapper {
+    display: flex;
+    justify-content: space-between; /* This will space the columns apart */
+}
+
+.publications-column {
+    width: 48%; /* Using 48% to leave some gap between columns; adjust as needed */
+}
+
