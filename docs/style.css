@@ -24,17 +24,6 @@ li.bold-name a {
     color: black;
 }
 
-#links .icon-container {
-    display: flex;
-    align-items: center; /* Align the icon and text horizontally */
-    margin-bottom: 10px; /* Add space between each icon and description */
-}
-
-#links .icon-container i {
-    margin-right: 5px; /* Add space between the icon and the text */
-}
-
-
 #toolbar {
     background-color: #7ac8fa;
     padding: 20px;
@@ -83,15 +72,7 @@ li.bold-name a {
     justify-content: center;
     margin-top: 10px;
 }
-#links a {
-    display: block;
-    margin-bottom: 10px; /* Space between each link */
-    text-align: left;
-}
 
-#links i {
-    margin-right: 5px;
-}
 #links a i {
     font-size: 24px;
 }
@@ -130,4 +111,3 @@ li.bold-name a {
 .publications-column {
     width: 48%; /* Using 48% to leave some gap between columns; adjust as needed */
 }
-
