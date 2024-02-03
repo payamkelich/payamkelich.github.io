@@ -24,6 +24,17 @@ li.bold-name a {
     color: black;
 }
 
+#links .icon-container {
+    display: flex;
+    align-items: center; /* Align the icon and text horizontally */
+    margin-bottom: 10px; /* Add space between each icon and description */
+}
+
+#links .icon-container i {
+    margin-right: 5px; /* Add space between the icon and the text */
+}
+
+
 #toolbar {
     background-color: #7ac8fa;
     padding: 20px;
