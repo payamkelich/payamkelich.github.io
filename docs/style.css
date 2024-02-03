@@ -111,3 +111,7 @@ li.bold-name a {
 .publications-column {
     width: 48%; /* Using 48% to leave some gap between columns; adjust as needed */
 }
+
+.icon-large {
+    font-size: 24px; /* Adjust the size as needed */
+}
