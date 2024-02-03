@@ -83,7 +83,7 @@ li.bold-name a {
 #links li {
     margin-bottom: 10px; /* Adjust as needed for spacing */
     display: flex;
-    justify-content: center; /* Center the li items */
+    justify-content: left; /* Center the li items */
     width: 100%;
 }
 
