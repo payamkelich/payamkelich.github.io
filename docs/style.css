@@ -67,39 +67,11 @@ li.bold-name a {
 }
 
 
-#links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the links container */
-    width: 100%;
-}
-
 #links {
-    list-style: none;
-    padding: 0;
-    width: 100%; /* Set the width to 100% of the container */
-}
-
-#links li {
-    margin-bottom: 10px; /* Adjust as needed for spacing */
     display: flex;
-    justify-content: left; /* Center the li items */
-    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
 }
-
-#links li a {
-    text-decoration: none;
-    color: inherit; /* Or any color you prefer */
-    align-items: center;
-    display: flex;
-    justify-content: left; /* Align the text to the left */
-    width: fit-content; /* Only take up necessary width */
-}
-
-#links li a i {
-    margin-right: 5px; /* Adjust as needed for spacing */
-}
-
 
 #links a i {
     font-size: 24px;
