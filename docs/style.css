@@ -73,14 +73,13 @@ li.bold-name a {
     margin-top: 10px;
 }
 #links a {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust the space between icon and text */
+    display: block;
     margin-bottom: 10px; /* Space between each link */
+    text-align: left;
 }
 
 #links i {
-    font-size: 20px; /* Adjust icon size if needed */
+    margin-right: 5px;
 }
 #links a i {
     font-size: 24px;
