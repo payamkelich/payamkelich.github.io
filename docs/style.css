@@ -231,11 +231,14 @@ li.bold-name a {
     }
 
     #links {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #links .link-icon {
-        margin: 10px 0;
+        margin: 5px;
     }
 
     #publications-wrapper {
@@ -257,7 +260,15 @@ li.bold-name a {
     }
 
     #links {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #links .link-icon {
+        margin: 5px;
+        font-size: 24px;
     }
 
     #about {
@@ -305,6 +316,18 @@ li.bold-name a {
     #image-container img {
         width: 200px;
         height: 200px;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #links .link-icon {
+        margin: 5px;
+        font-size: 20px;
     }
 
     .experience-item {
