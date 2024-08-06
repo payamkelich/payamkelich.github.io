@@ -74,7 +74,7 @@ html {
 li.bold-name a {
     font-size: 1.5rem;
     color: #e84a27; /* Orange color for Payam Kelich */
-    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* White edge */
+    text-shadow: -0.5px -0.5px 0 #ffffff, 0.5px -0.5px 0 #ffffff, -0.5px 0.5px 0 #ffffff, 0.5px 0.5px 0 #ffffff; /* White edge */
 }
 
 /* Rest of your CSS remains unchanged */
