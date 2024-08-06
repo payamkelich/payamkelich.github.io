@@ -1,3 +1,4 @@
+/* General styles */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -23,7 +24,7 @@
 
 body {
     font-family: 'Lora', serif;
-    background-color: #f0f8ff;
+    background-color: rgba(255, 218, 203, 0.3);
     margin: 0;
     padding: 0;
     color: #333;
@@ -34,7 +35,7 @@ html {
 }
 
 #toolbar {
-    background-color: #3498db;
+    background-color: #132a4c;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
@@ -58,7 +59,7 @@ html {
 
 #toolbar nav ul li a {
     text-decoration: none;
-    color: white;
+    /*color: white; !* Default color for all links *!*/
     font-weight: bold;
     padding: 10px 20px;
     transition: background-color 0.3s;
@@ -71,8 +72,12 @@ html {
 }
 
 li.bold-name a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: #e84a27; /* Orange color for Payam Kelich */
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* White edge */
 }
+
+/* Rest of your CSS remains unchanged */
 
 .center-para {
     text-align: center;
@@ -177,7 +182,7 @@ li.bold-name a {
     margin-bottom: 30px; /* Increased spacing between publication items */
 }
 .pub strong {
-    color: darkorange;
+    color: #ff4d00;
 }
 .pub .author-name {
     color: darkblue;
