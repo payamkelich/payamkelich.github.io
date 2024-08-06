@@ -10,51 +10,100 @@
         li {
             margin-bottom: 25px;
         }
+        .link-icon {
+            font-size: 30px;
+            margin: 0 10px;
+            color: #333;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .link-icon:hover {
+            color: #3498db;
+            animation: bounce 1s;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
     </style>
 </head>
 <body>
 <header id="toolbar">
     <nav>
-            <ul>
-                <li class="bold-name"><a href="index.html">Payam Kelich</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="mailto:payam.kelich68@gmail.com">Contact</a></li>
-                <li><a href="./uploads/cv-pkelich.pdf" target="_blank">CV</a></li>
-            </ul>
+        <ul>
+            <li class="bold-name"><a href="index.html">Payam Kelich</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="publications.html">Publications</a></li>
+<!--            <li><a href="mailto:payam.kelich68@gmail.com">Contact</a></li>-->
+<!--            <li><a href="./uploads/cv-pkelich.pdf" target="_blank">CV</a></li>-->
+        </ul>
     </nav>
 </header>
 <section id="profile">
     <div id="image-container">
         <img src="profile-pic.jpg" alt="Payam Kelich Profile Pic">
-            <h2>Payam Kelich</h2>
-            <p class="center-para">Postdoctoral Research Associate</p>
-            <p class="center-para">University of Illinois Urbana-Champaign</p>
+        <h2>Payam Kelich</h2>
+        <p class="center-para">Postdoctoral Research Associate</p>
+        <p class="center-para">University of Illinois Urbana-Champaign</p>
         <div id="links">
-            <a href="mailto:payam.kelich68@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/payamkelich/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-            <a href="https://github.com/payamkelich" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="./uploads/cv-pkelich.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            <a href="mailto:payam.kelich68@gmail.com" target="_blank" class="link-icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/payamkelich/" target="_blank" class="link-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en&oi=ao" target="_blank" class="link-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://github.com/payamkelich" target="_blank" class="link-icon"><i class="fab fa-github"></i></a>
+            <a href="./uploads/cv-pkelich.pdf" target="_blank" class="link-icon"><i class="fas fa-file-alt"></i></a>
+            <a href="https://twitter.com/payamkelich" target="_blank" class="link-icon"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
-    <div id="experience" style="margin-top: 50px; margin-left: 100px;">
-        <h2>WORK EXPERIENCES</h2>
-        <ul>
-            <li>
-                <strong>[2020 - Present] PhD Research Associate</strong><br>
-                University of Texas at El Paso, TX, USA<br>
-                Supervisor: Dr. Lela Vuković<br>
-                Responsibilities:
-                <ul>
-                    <li>Played an instrumental role in groundbreaking research concerning the binding and sensing of molecular analytes in DNA-CNT conjugates, driving forward the scientific understanding in this field.</li>
-                    <li>Facilitated future research proposals by creating comprehensive preliminary data reports and project specifications, thereby improving team...</li>
-                </ul>
-            </li>
-        </ul>
+    <div id="experience" style="margin-top: 50px; margin-left: 0px; max-width: 80000px;">
+        <h2 style="text-align: left; color: #333;">Work Experiences</h2>
+        <div class="experience-item" style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #3498db;">[2024 - Present] Postdoctoral Research Associate</h3>
+            <p>University of Illinois Urbana-Champaign, IL, USA</p>
+            <p><strong>Supervisor:</strong> Dr. Emad Tajkhorshid</p>
+            <ul style="padding-left: 20px;">
+                <li>Created preliminary data reports to enhance team efficiency.</li>
+                <li>Maintained Linux infrastructure for molecular dynamics and ML projects.</li>
+                <li>Conducted molecular dynamics simulations on membrane proteins.</li>
+                <li>Customized VMD plugins for better visualization and analysis.</li>
+            </ul>
+        </div>
+        <div class="experience-item" style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #3498db;">[2020 - 2024] Ph.D. Research Associate</h3>
+            <p>University of Texas at El Paso, TX, USA</p>
+            <p><strong>Supervisor:</strong> Dr. Lela Vukovic</p>
+            <ul style="padding-left: 20px;">
+                <li>Researched DNA-CNT conjugates and peptidomimetics.</li>
+                <li>Developed infrastructure for MD simulations and ML projects.</li>
+                <li>Collaborated on computational modeling of nanoscale systems.</li>
+                <li>Created preliminary data reports for future research proposals.</li>
+            </ul>
+        </div>
+        <div class="experience-item" style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #3498db;">[2020 - 2024] Ph.D. Teaching Assistant</h3>
+            <p>University of Texas at El Paso, TX, USA</p>
+            <ul style="padding-left: 20px;">
+                <li>Assisted in General Chemistry and Organic Chemistry labs.</li>
+            </ul>
+        </div>
+        <div class="experience-item" style="background: #f9f9f9; padding: 30px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #3498db;">[2016 - 2019] Python Programmer and DevOps Engineer</h3>
+            <p>Fanava IDC, Tehran, Tehran, Iran</p>
+            <ul style="padding-left: 20px;">
+                <li>Developed Python scripts for business processes.</li>
+                <li>Managed Linux servers for optimal performance and security.</li>
+                <li>Deployed and maintained Python applications on Linux servers.</li>
+                <li>Integrated ML models into production and managed their lifecycle.</li>
+            </ul>
+        </div>
     </div>
+
 </section>
 </body>
 </html>
-

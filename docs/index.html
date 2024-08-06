@@ -9,54 +9,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 <body>
-    <header id="toolbar">
-        <nav>
-            <ul>
-                <li class="bold-name"><a href="index.html">Payam Kelich</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="mailto:payam.kelich68@gmail.com">Contact</a></li>
-                <li><a href="./uploads/cv-pkelich.pdf" target="_blank">CV</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="profile">
-        <div id="image-container">
-            <img src="profile-pic.jpg" alt="Payam Kelich Profile Pic">
-            <h2>Payam Kelich</h2>
-            <p class="center-para">Postdoctoral Research Associate</p>
-            <p class="center-para">University of Illinois Urbana-Champaign</p>
-            <div id="links">
-                <a href="mailto:payam.kelich68@gmail.com" target="_blank"><i class="fas fa-envelope icon-large"></i></a>
-                <a href="https://www.linkedin.com/in/payamkelich/" target="_blank"><i class="fab fa-linkedin icon-large"></i></a>
-                <a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap icon-large"></i></a>
-                <a href="https://github.com/payamkelich" target="_blank"><i class="fab fa-github icon-large"></i></a>
-                <a href="./uploads/cv-pkelich.pdf" target="_blank"><i class="fas fa-file-pdf icon-large"></i></a>
-            </div>
+<header id="toolbar">
+    <nav>
+        <ul>
+            <li class="bold-name"><a href="index.html">Payam Kelich</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="publications.html">Publications</a></li>
+<!--            <li><a href="mailto:payam.kelich68@gmail.com">Contact</a></li>-->
+<!--            <li><a href="./uploads/cv-pkelich.pdf" target="_blank">CV</a></li>-->
+        </ul>
+    </nav>
+</header>
+<section id="profile">
+    <div id="image-container">
+        <img src="profile-pic.jpg" alt="Payam Kelich Profile Pic">
+        <h2>Payam Kelich</h2>
+        <p class="center-para">Postdoctoral Research Associate</p>
+        <p class="center-para">University of Illinois Urbana-Champaign</p>
+        <div id="links">
+            <a href="mailto:payam.kelich68@gmail.com" target="_blank" class="link-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/payamkelich/" target="_blank" class="link-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en&oi=ao" target="_blank" class="link-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://github.com/payamkelich" target="_blank" class="link-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="./uploads/cv-pkelich.pdf" target="_blank" class="link-icon">
+                <i class="fas fa-file-alt"></i>
+            </a>
+            <a href="https://twitter.com/payam_kelich" target="_blank" class="link-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
         </div>
-        <div id="about">
-            <h3>I'm a <span id="typed"></span></h3>
-            <p class="p-justify">
-        I am Payam Kelich, an experienced Python Developer with a strong background in Linux, and a specialization in Molecular Dynamic simulations, and Machine Learning. As a PhD candidate, I have conducted significant research in areas such as molecular dynamics simulations, machine learning, and automated molecular docking techniques. My work has contributed to drug discovery advancements and provided valuable insights in virology, computational biology, and nanobiotechnology. I have developed tools like BinderSpace and Linux bash scripts to streamline molecular research. Currently, I am engaged in projects focused on cheminformatics and time series forecasting to drive advancements in pharmaceutical research and predict molecular dynamic properties.
-    </p>
-    <p class="p-justify">
-        
-I recently graduated with my PhD from the University of Texas at El Paso, where I was under the supervision of <a href="https://utminers.utep.edu/lvukovic/group.html" target="_blank">Dr. Lela Vukovic</a> from the Department of Chemistry and Biochemistry. Having successfully defended my thesis in December 2023, I am now embarking on a new chapter as a Postdoctoral Research Associate at the Beckman Institute, working in <a href="http://csbmb.beckman.illinois.edu/people.html" target="_blank">Dr. Emad Tajkhorshid</a>'s group.</br>  Recently, I had the privilege of serving as an instructor for a summer school program on Pandas, a Python library for data manipulation and analysis. The event was hosted by Dr. Pratyush Tiwary at the University of Maryland Institute for Health Computing. It was a fantastic experience. Check out the videos and notebook at the link below: </br>     <a href="https://umd.zoom.us/rec/share/5VHN-GqBi-3hY-AM4xTbheHAz1abuBb84R2ALwOvJFdIE4MsWzIKdtf9K6GNs0dy.qgdZF83OY6F2xidK" target="_blank">Video link</a></br>    <a href="https://colab.research.google.com/drive/1SfwqeRD5kxHtPMnqtVfjZ-1ST-tvfc6u?usp=sharing" target="_blank">Notebook link</a>
-        </br>     <a href="https://scotch.wangyq.net/" target="_blank">All courses link</a>
-        
-    </p>
-        </div>
-    </section>
-    <script>
-        window.onload = function(){
-            var typed = new Typed('#typed', {
-                strings: ["Developer", "Programmer", "Computational Chemist", "Geek"],
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true
-            });
-        }
-    </script>
+    </div>
+
+    <div id="about">
+        <h3>I'm a <span id="typed"></span></h3>
+        <p class="p-justify">
+            I am Payam Kelich, an experienced Python Developer with a strong background in Linux, and a specialization in Molecular Dynamic simulations, and Machine Learning. As a PhD candidate, I have conducted significant research in areas such as molecular dynamics simulations, machine learning, and automated molecular docking techniques. My work has contributed to drug discovery advancements and provided valuable insights in virology, computational biology, and nanobiotechnology. I have developed tools like BinderSpace and Linux bash scripts to streamline molecular research. Currently, I am engaged in projects focused on cheminformatics and time series forecasting to drive advancements in pharmaceutical research and predict molecular dynamic properties.
+        </p>
+        <p class="p-justify">
+            I graduated with my PhD from the University of Texas at El Paso, where I was under the supervision of <a href="https://utminers.utep.edu/lvukovic/group.html" target="_blank">Dr. Lela Vukovic</a> from the Department of Chemistry and Biochemistry. Having successfully defended my thesis in December 2023.
+        </p>
+        <p class="p-justify">
+            I am now embarking on a new chapter as a Postdoctoral Research Associate at the Beckman Institute, working in <a href="http://csbmb.beckman.illinois.edu/people.html" target="_blank">Dr. Emad Tajkhorshid</a>'s group.</br>
+        </p>
+        <p class="p-justify">
+            Recently, I had the privilege of serving as an instructor for a summer school program on Pandas, a Python library for data manipulation and analysis. The event was hosted by Dr. Pratyush Tiwary at the University of Maryland Institute for Health Computing. It was a fantastic experience. Check out the videos and notebook at the link below: </br> <a href="https://umd.zoom.us/rec/share/5VHN-GqBi-3hY-AM4xTbheHAz1abuBb84R2ALwOvJFdIE4MsWzIKdtf9K6GNs0dy.qgdZF83OY6F2xidK" target="_blank">Video link</a></br> <a href="https://colab.research.google.com/drive/1SfwqeRD5kxHtPMnqtVfjZ-1ST-tvfc6u?usp=sharing" target="_blank">Notebook link</a> </br> <a href="https://scotch.wangyq.net/" target="_blank">All courses link</a>
+        </p>
+    </div>
+</section>
+<script>
+    window.onload = function(){
+        var typed = new Typed('#typed', {
+            strings: ["Developer", "Programmer", "Computational Chemist", "Geek"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    }
+</script>
 </body>
 </html>
