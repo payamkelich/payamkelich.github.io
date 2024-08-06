@@ -10,6 +10,17 @@
     }
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 body {
     font-family: 'Lora', serif;
     background-color: #f0f8ff;
@@ -119,10 +130,58 @@ li.bold-name a {
     text-align: left;
 }
 
+#skills {
+    margin-top: 20px;
+}
+
+#skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    animation: fadeInUp 0.5s ease both;
+}
+
+.skills-block h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+}
+
 .pub {
     position: relative;
     padding-left: 270px;
     margin-bottom: 30px; /* Increased spacing between publication items */
+}
+.pub strong {
+    color: darkorange;
+}
+.pub .author-name {
+    color: darkblue;
+    font-weight: bold;
 }
 
 .pub img {
@@ -245,5 +304,13 @@ li.bold-name a {
 
     .experience-item {
         padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-block {
+        flex: 1 1 100%;
     }
 }
