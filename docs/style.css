@@ -19,7 +19,7 @@ body {
 }
 
 html {
-    font-size: 150%; /* This sets the base font size to be 150% of the default browser setting */
+    font-size: 150%;
 }
 
 #toolbar {
@@ -34,18 +34,24 @@ html {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensure the items are centered vertically */
 }
 
 #toolbar nav ul li {
     margin-right: 20px;
 }
 
+#toolbar nav ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last item */
+}
+
 #toolbar nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 10px 20px;
     transition: background-color 0.3s;
+    display: block; /* Ensure anchor tags behave like block elements */
 }
 
 #toolbar nav ul li a:hover {
@@ -86,15 +92,15 @@ li.bold-name a {
 }
 
 .link-icon {
-    font-size: 30px; /* Change this value to adjust the icon size */
+    font-size: 30px;
     margin: 0 10px;
     color: #333;
-    transition: color 0.3s, transform 0.3s; /* Add transition for smooth animation */
+    transition: color 0.3s, transform 0.3s;
 }
 
 .link-icon:hover {
     color: #3498db;
-    animation: bounce 1s; /* Apply bounce animation on hover */
+    animation: bounce 1s;
 }
 
 .p-justify {
@@ -115,7 +121,8 @@ li.bold-name a {
 
 .pub {
     position: relative;
-    padding-left: 270px; /* Adjusted padding to include the width of the image */
+    padding-left: 270px;
+    margin-bottom: 30px; /* Increased spacing between publication items */
 }
 
 .pub img {
@@ -135,6 +142,49 @@ li.bold-name a {
     width: 48%;
 }
 
+.experience-item {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #experience {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    #publications {
+        margin: 20px;
+    }
+
+    #links {
+        flex-direction: column;
+    }
+
+    #links .link-icon {
+        margin: 10px 0;
+    }
+
+    #publications-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .publications-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     #profile {
         flex-direction: column;
@@ -143,10 +193,57 @@ li.bold-name a {
     }
 
     #links {
-        margin-left: 0;
+        flex-direction: column;
     }
 
     #about {
         margin: 20px;
+    }
+
+    .experience-item {
+        padding: 20px;
+    }
+
+    .pub {
+        padding-left: 0;
+        margin-bottom: 30px; /* Ensure increased spacing is applied for smaller screens */
+    }
+
+    .pub img {
+        width: 100%;
+        position: static;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .publications-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 100%;
+    }
+
+    #toolbar nav ul {
+        flex-direction: column;
+    }
+
+    #toolbar nav ul li {
+        margin: 10px 0;
+    }
+
+    #toolbar nav ul li a {
+        padding: 10px;
+    }
+
+    #image-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .experience-item {
+        padding: 15px;
     }
 }
