@@ -215,7 +215,7 @@ li.bold-name a {
 }
 
 .logo {
-    height: 1.5em; /* Adjust based on your font size */
+    height: 1em; /* Adjust based on your font size */
     vertical-align: middle;
     margin-right: 0.5em; /* Adjust spacing as needed */
 }
