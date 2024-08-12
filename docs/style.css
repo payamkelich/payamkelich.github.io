@@ -214,6 +214,12 @@ li.bold-name a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+    height: 1.5em; /* Adjust based on your font size */
+    vertical-align: middle;
+    margin-right: 0.5em; /* Adjust spacing as needed */
+}
+
 @media (max-width: 1024px) {
     #profile {
         flex-direction: column;
