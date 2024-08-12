@@ -220,6 +220,7 @@ li.bold-name a {
     margin-right: 0.5em; /* Adjust spacing as needed */
 }
 
+
 @media (max-width: 1024px) {
     #profile {
         flex-direction: column;
