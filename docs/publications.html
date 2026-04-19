@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Payam Kelich - Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="profile-pic1.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,10 +13,10 @@
     <nav>
         <ul>
             <li class="bold-name"><a href="index.html">Payam Kelich</a></li>
-            <li><a href="https://payamkelich.github.io/#skills" style="color: #ffffff;">Skills</a></li>
-            <li><a href="experience.html" style="color: #ffffff;">Experiences</a></li>
-            <li><a href="publications.html" style="color: #ffffff;">Publications</a></li>
-            <li><a href="./uploads/cv-pkelich.pdf" style="color: #ffffff;">CV</a></li>
+            <li><a href="https://payamkelich.github.io/#skills">Skills</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="./uploads/cv-pkelich.pdf">CV</a></li>
         </ul>
     </nav>
 </header>
@@ -34,142 +35,195 @@
             <a href="https://twitter.com/payam_kelich" target="_blank" class="link-icon"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </div>
-    <div id="publications" style="margin-top: 50px; max-width: 1200px;">
-        <h2>PUBLICATIONS</h2>
-        <i>Publications on <b><a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en" target="_blank">Google Scholar.</a></b><br><br></i>
+    <div id="publications" class="page-content">
+        <div class="page-heading">
+            <h2>Publications</h2>
+            <p class="page-subtitle">Selected papers and ongoing projects in molecular simulations, machine learning, and cheminformatics.</p>
+        </div>
+        <p>Publications on <strong><a href="https://scholar.google.com/citations?user=JyGB2-MAAAAJ&hl=en" target="_blank">Google Scholar</a></strong>.</p>
         <h3>Published Papers:</h3>
-        <ol reversed>
-            <li class="pub"><strong>Fluorescence Changes in Carbon Nanotube Sensors Correlate with THz Absorption of Hydration.</strong><br>
-                S. S. Nalige, P. Galonska, <span class="author-name">Kelich, P.</span>, L. Sistemich, C. Herrmann, L. Vukovic, S. Kruss, M. Havenith.
-                <br>
-                <i>Nature Communication</i>
-                <img src="toc-thz.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1038/s41467-024-50968-9" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/MD-THz-spectra" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+        <ol reversed class="publication-list">
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-thz.png" alt="Cover image for THz hydration publication">
+                    <div class="pub-content">
+                        <strong>Fluorescence Changes in Carbon Nanotube Sensors Correlate with THz Absorption of Hydration.</strong><br>
+                        S. S. Nalige, P. Galonska, <span class="author-name">Kelich, P.</span>, L. Sistemich, C. Herrmann, L. Vukovic, S. Kruss, M. Havenith.<br>
+                        <i>Nature Communication</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1038/s41467-024-50968-9" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/MD-THz-spectra" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Serotonin Detection with DNA-Carbon Nanotube Sensors Across Multiple Spectral Wavelengths.</strong><br>
-                <span class="author-name">Kelich, P.</span> J. Adams, S. Jeong, N. Navarro, M. P. Landry, L. Vukovic
-                <br>
-                <i>Journal of Chemical Information and Modeling</i>
-                <img src="toc-spectra.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1038/s41467-023-41427-y" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/PySpectrotonin" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-spectra.png" alt="Cover image for serotonin sensor spectra publication">
+                    <div class="pub-content">
+                        <strong>Serotonin Detection with DNA-Carbon Nanotube Sensors Across Multiple Spectral Wavelengths.</strong><br>
+                        <span class="author-name">Kelich, P.</span>, J. Adams, S. Jeong, N. Navarro, M. P. Landry, L. Vukovic<br>
+                        <i>Journal of Chemical Information and Modeling</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1038/s41467-023-41427-y" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/PySpectrotonin" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Directed Evolution of Near-infrared Serotonin Nanosensors with Machine Learning-based Screening.</strong><br>
-                S. An, Y. Suh, <span class="author-name">Kelich, P.</span> D. Lee, L. Vukovic, S. Jeong.
-                <br>
-                <i>Nanomaterials</i>
-                <img src="toc-mdpi.jpg" width="300" />
-                <br>
-                <a href="https://doi.org/10.1021/acs.jcim.4c00021" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-mdpi.jpg" alt="Cover image for directed evolution publication">
+                    <div class="pub-content">
+                        <strong>Directed Evolution of Near-infrared Serotonin Nanosensors with Machine Learning-based Screening.</strong><br>
+                        S. An, Y. Suh, <span class="author-name">Kelich, P.</span>, D. Lee, L. Vukovic, S. Jeong.<br>
+                        <i>Nanomaterials</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/acs.jcim.4c00021" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Genetically-Encoded Discovery of Perfluoroaryl-Macrocycles that Bind to Albumin and Exhibit Extended Circulation in-vivo.</strong><br>
-                Wong, J.YK., Kirberger, S.E., Qiu, R., Ekanayake, A.I., <span class="author-name">Kelich, P.</span>, Sarkar, S., Alvizo-Paez, E.R., Miao, J., Kalhor-Monfared, S., Dwyer, J.J., Nuss, J.M., Lin, Y.S., Macauley, M.S., Vukovic, L., Pomerantz, W.CK., & Derda, R.
-                <br>
-                <i>Nature Communication</i>
-                <img src="macrocycles2.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1038/s41467-023-41427-y" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/hsa-dock" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="macrocycles2.png" alt="Cover image for perfluoroaryl macrocycles publication">
+                    <div class="pub-content">
+                        <strong>Genetically-Encoded Discovery of Perfluoroaryl-Macrocycles that Bind to Albumin and Exhibit Extended Circulation in-vivo.</strong><br>
+                        Wong, J.YK., Kirberger, S.E., Qiu, R., Ekanayake, A.I., <span class="author-name">Kelich, P.</span>, Sarkar, S., Alvizo-Paez, E.R., Miao, J., Kalhor-Monfared, S., Dwyer, J.J., Nuss, J.M., Lin, Y.S., Macauley, M.S., Vukovic, L., Pomerantz, W.CK., &amp; Derda, R.<br>
+                        <i>Nature Communication</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1038/s41467-023-41427-y" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/hsa-dock" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>BinderSpace: A Package for Sequence Space Analyses for Datasets of Affinity-Selected Oligonucleotides and Peptide-Based Molecules.</strong><br>
-                <span class="author-name">Kelich, P.</span>, Zhao, H., & Vukovic, L.
-                <br>
-                <i>Journal of Computational Chemistry</i>
-                <img src="toc-bs.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1002/jcc.27130" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/BinderSpace" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-bs.png" alt="Cover image for BinderSpace publication">
+                    <div class="pub-content">
+                        <strong>BinderSpace: A Package for Sequence Space Analyses for Datasets of Affinity-Selected Oligonucleotides and Peptide-Based Molecules.</strong><br>
+                        <span class="author-name">Kelich, P.</span>, Zhao, H., &amp; Vukovic, L.<br>
+                        <i>Journal of Computational Chemistry</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1002/jcc.27130" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/BinderSpace" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Characterizing the Interactions of Cell Membrane-Disrupting Peptides with Lipid-Functionalized Single-Walled Carbon Nanotube Systems for Antimicrobial Discovery.</strong><br>
-                Yadav, A., <span class="author-name">Kelich, P.</span>*, Kallmyer, N.E., Reuel, N.F., & Vukovic, L. (* co-first author)
-                <br>
-                <i>ACS Applied Materials & Interfaces</i>.
-                <img src="toc-web-popc.png" />
-                <br>
-                <a href="https://doi.org/10.1021/acsami.3c01217" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/POPCsensor" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-web-popc.png" alt="Cover image for antimicrobial discovery publication">
+                    <div class="pub-content">
+                        <strong>Characterizing the Interactions of Cell Membrane-Disrupting Peptides with Lipid-Functionalized Single-Walled Carbon Nanotube Systems for Antimicrobial Discovery.</strong><br>
+                        Yadav, A., <span class="author-name">Kelich, P.</span>*, Kallmyer, N.E., Reuel, N.F., &amp; Vukovic, L. (* co-first author)<br>
+                        <i>ACS Applied Materials &amp; Interfaces</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/acsami.3c01217" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/POPCsensor" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Discovery of DNA-Carbon Nanotube Sensors for Serotonin with Machine Learning and Near-infrared Fluorescence Spectroscopy</strong><br>
-                <span class="author-name">Kelich, P.</span>, Jeong, S., Navarro, N., Adams, J., Sun, X., Zhao, H., Landry, M.P., & Vukovic, L.
-                <br>
-                <i>ACS Nano</i>
-                <img src="toc-ml.png" />
-                <br>
-                <a href="https://doi.org/10.1021/acsnano.1c08271" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/vukoviclab/DNAsensor" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-ml.png" alt="Cover image for serotonin discovery publication">
+                    <div class="pub-content">
+                        <strong>Discovery of DNA-Carbon Nanotube Sensors for Serotonin with Machine Learning and Near-infrared Fluorescence Spectroscopy</strong><br>
+                        <span class="author-name">Kelich, P.</span>, Jeong, S., Navarro, N., Adams, J., Sun, X., Zhao, H., Landry, M.P., &amp; Vukovic, L.<br>
+                        <i>ACS Nano</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/acsnano.1c08271" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/vukoviclab/DNAsensor" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Computational Modeling of the Virucidal Inhibition Mechanism for Broad-Spectrum Antiviral Nanoparticles and HPV16 Capsid Segments.</strong><br>
-                Chaturvedi, P., <span class="author-name">Kelich, P.</span>, Nikita, T.A., & Vukovic, L.
-                <br>
-                <i>The Journal of Physical Chemistry B</i>
-                <img src="toc-hpv.png" />
-                <br>
-                <a href="https://doi.org/10.1021/acs.jpcb.1c07436" target="_blank"><i class="far fa-newspaper"></i></a>
-                <a href="https://github.com/payamkelich/docking-scan" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-hpv.png" alt="Cover image for antiviral nanoparticles publication">
+                    <div class="pub-content">
+                        <strong>Computational Modeling of the Virucidal Inhibition Mechanism for Broad-Spectrum Antiviral Nanoparticles and HPV16 Capsid Segments.</strong><br>
+                        Chaturvedi, P., <span class="author-name">Kelich, P.</span>, Nikita, T.A., &amp; Vukovic, L.<br>
+                        <i>The Journal of Physical Chemistry B</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/acs.jpcb.1c07436" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                            <a href="https://github.com/payamkelich/docking-scan" target="_blank" aria-label="Open source code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Genetically Encoded Fragment-Based Discovery from Phage-Displayed Macrocyclic Libraries with Genetically Encoded Unnatural Pharmacophores.</strong><br>
-                Ekanayake, A.I., Sobze, L., <span class="author-name">Kelich, P.</span>, Youk, J., Bennett, N.J., Mukherjee, R., Bhardwaj, A., Wuest, F., & Vukovic, L., Derda, R.
-                <br>
-                <i>Journal of the American Chemical Society</i>
-                <img src="cyclic.png" />
-                <br>
-                <a href="https://doi.org/10.1021/jacs.1c01186" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="cyclic.png" alt="Cover image for macrocyclic libraries publication">
+                    <div class="pub-content">
+                        <strong>Genetically Encoded Fragment-Based Discovery from Phage-Displayed Macrocyclic Libraries with Genetically Encoded Unnatural Pharmacophores.</strong><br>
+                        Ekanayake, A.I., Sobze, L., <span class="author-name">Kelich, P.</span>, Youk, J., Bennett, N.J., Mukherjee, R., Bhardwaj, A., Wuest, F., &amp; Vukovic, L., Derda, R.<br>
+                        <i>Journal of the American Chemical Society</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/jacs.1c01186" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Molecular simulation study on brushes of poly (2-ethyl-2-oxazoline).</strong><br>
-                <span class="author-name">Kelich, P.</span>, & Asadinezhad, A.
-                <br>
-                <i>Materials Today Communications</i>.
-                <img src="toc-poo.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1016/j.mtcomm.2019.100681" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-poo.png" alt="Cover image for polymer brush simulation publication">
+                    <div class="pub-content">
+                        <strong>Molecular simulation study on brushes of poly (2-ethyl-2-oxazoline).</strong><br>
+                        <span class="author-name">Kelich, P.</span>, &amp; Asadinezhad, A.<br>
+                        <i>Materials Today Communications</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.mtcomm.2019.100681" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Effects of Carbon nanofiller Characteristics on PTT Chain Conformation and Dynamics: A Computational Study.</strong><br>
-                Asadinezhad, A., & <span class="author-name">Kelich, P.</span>
-                <br>
-                <i>Applied Surface Science</i>.
-                <img src="toc-ptt.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1016/j.apsusc.2016.09.137" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-ptt.png" alt="Cover image for PTT nanofiller publication">
+                    <div class="pub-content">
+                        <strong>Effects of Carbon nanofiller Characteristics on PTT Chain Conformation and Dynamics: A Computational Study.</strong><br>
+                        Asadinezhad, A., &amp; <span class="author-name">Kelich, P.</span><br>
+                        <i>Applied Surface Science</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.apsusc.2016.09.137" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <hr>
-            <li class="pub"><strong>Adsorption of Poly(Ethylene Succinate) Chain onto Graphene Nanosheets: A Molecular Simulation".</strong><br>
-                <span class="author-name">Kelich, P.</span>, & Asadinezhad, A.
-                <br>
-                <i>Journal of Molecular Graphics and Modelling</i>
-                <img src="toc-pes1.png" width="300" />
-                <br>
-                <a href="https://doi.org/10.1016/j.jmgm.2016.08.003" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-pes1.png" alt="Cover image for graphene nanosheets publication">
+                    <div class="pub-content">
+                        <strong>Adsorption of Poly(Ethylene Succinate) Chain onto Graphene Nanosheets: A Molecular Simulation.</strong><br>
+                        <span class="author-name">Kelich, P.</span>, &amp; Asadinezhad, A.<br>
+                        <i>Journal of Molecular Graphics and Modelling</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.jmgm.2016.08.003" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <br>
-            <hr>
-            <li class="pub"><strong>Molecular Dynamics Insights into Behavior of Poly(ethylene succinate) Single Chain on Carbon Nanotube Surface.</strong><br>
-                <span class="author-name">Kelich, P.</span>, & Asadinezhad, A.
-                <br>
-                <i>The Journal of Physical Chemistry C</i>
-                <img src="toc-pes.jpeg" width="300" />
-                <br>
-                <a href="https://doi.org/10.1021/acs.jpcc.5b07844" target="_blank"><i class="far fa-newspaper"></i></a>
+            <li class="pub">
+                <div class="pub-card">
+                    <img src="toc-pes.jpeg" alt="Cover image for carbon nanotube surface publication">
+                    <div class="pub-content">
+                        <strong>Molecular Dynamics Insights into Behavior of Poly(ethylene succinate) Single Chain on Carbon Nanotube Surface.</strong><br>
+                        <span class="author-name">Kelich, P.</span>, &amp; Asadinezhad, A.<br>
+                        <i>The Journal of Physical Chemistry C</i>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1021/acs.jpcc.5b07844" target="_blank" aria-label="Read publication"><i class="far fa-newspaper"></i></a>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ol>
-        <br>
         <h3>Papers in preparation:</h3>
         <ol>
             <li class="pub"><strong>Discovery of DNA-Carbon Nanotube Sensors for Oxytocin Detection Through Machine Learning, Generative Models, and Near-Infrared Fluorescence Spectroscopy</strong><br><span class="author-name">Kelich, P.</span>, J. Adams, M.P. Landry, L. Vukovic.
             </li>
-            </br>
             <li class="pub"><strong>Machine Learning Models for Predicting the Subcellular Localization of Small Molecules</strong><br><span class="author-name">Kelich, P.</span>, A. Yadav, Md Nurunnabi, L. Vukovic.
             </li>
         </ol>
