@@ -3,6 +3,9 @@
     --bg-accent: #fce0d2;
     --surface: rgba(255, 255, 255, 0.82);
     --surface-strong: #ffffff;
+    --illini-blue: #13294b;
+    --illini-orange: #ff5f05;
+    --illini-blue-glow: #9cbfff;
     --text: #223046;
     --muted: #5d6a7d;
     --navy: #132a4c;
@@ -89,9 +92,23 @@ li {
     top: 0;
     z-index: 10;
     padding: 1rem 1.5rem;
+    overflow: hidden;
     backdrop-filter: blur(18px);
-    background: rgba(19, 42, 76, 0.9);
-    box-shadow: 0 12px 32px rgba(19, 42, 76, 0.16);
+    background:
+        radial-gradient(circle at 12% 50%, rgba(255, 95, 5, 0.18), transparent 18%),
+        linear-gradient(135deg, rgba(19, 41, 75, 0.97), rgba(9, 20, 41, 0.94));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 16px 38px rgba(19, 42, 76, 0.18);
+}
+
+#toolbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255, 95, 5, 0.92), rgba(156, 191, 255, 0.55), rgba(255, 95, 5, 0.92));
 }
 
 #toolbar nav {
@@ -107,42 +124,90 @@ li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.75rem;
 }
 
 #toolbar nav ul li a {
-    display: block;
-    padding: 0.7rem 1rem;
-    border-radius: 999px;
-    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
-    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.82rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    color: #f8fbff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+}
+
+.nav-icon {
+    color: var(--illini-orange);
+    font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    background: rgba(255, 95, 5, 0.14);
+    border-color: rgba(255, 95, 5, 0.35);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(7, 15, 31, 0.22);
 }
 
 #toolbar nav ul li a:hover,
 #toolbar nav ul li a:focus-visible {
-    background-color: rgba(255, 255, 255, 0.14);
     color: #ffffff;
-    transform: translateY(-1px);
 }
 
 li.bold-name {
     margin-right: auto;
 }
 
-li.bold-name a {
-    padding-left: 0;
-    font-size: clamp(1.35rem, 1.1rem + 1vw, 1.85rem);
-    color: #ffffff;
+.brand-link {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.28rem;
+    padding: 0.25rem 0 0.45rem;
+    font-size: clamp(1.45rem, 1.1rem + 1vw, 1.95rem);
     letter-spacing: 0.02em;
+    background: transparent;
+}
+
+.brand-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 12%;
+    bottom: 0;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--illini-blue-glow), var(--illini-orange));
+    opacity: 0.88;
+}
+
+.brand-primary {
+    color: var(--illini-blue-glow);
+    text-shadow: 0 0 16px rgba(156, 191, 255, 0.18);
+}
+
+.brand-accent {
+    color: var(--illini-orange);
+    text-shadow: 0 0 16px rgba(255, 95, 5, 0.18);
 }
 
 li.bold-name a:hover,
 li.bold-name a:focus-visible {
     background: transparent;
-    color: #ffd5c1;
     transform: none;
+    box-shadow: none;
 }
 
 #profile {
@@ -458,7 +523,8 @@ li.bold-name a:focus-visible {
     }
 
     li.bold-name a {
-        padding-left: 1rem;
+        justify-content: center;
+        padding-bottom: 0.5rem;
     }
 
     .skills-container,
@@ -504,6 +570,10 @@ li.bold-name a:focus-visible {
     #toolbar nav ul li a {
         text-align: center;
         padding: 0.8rem 1rem;
+    }
+
+    .nav-link {
+        justify-content: center;
     }
 
     .experience-item {
