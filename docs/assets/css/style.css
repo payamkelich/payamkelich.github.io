@@ -169,7 +169,7 @@ li {
 }
 
 li.bold-name {
-    margin-right: auto;
+    margin-right: 0.85rem;
 }
 
 .brand-link {
@@ -561,6 +561,10 @@ li.bold-name a:focus-visible {
         width: 100%;
         text-align: center;
         padding: 0.8rem 1rem;
+    }
+
+    li.bold-name a {
+        justify-content: center;
     }
 
     .nav-link {
